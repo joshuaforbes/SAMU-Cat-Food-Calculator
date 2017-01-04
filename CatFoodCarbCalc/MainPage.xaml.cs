@@ -117,13 +117,13 @@ namespace CatFoodCarbCalc
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
         {
-            string blank = "Enter Data";
-            inputAsh.PlaceholderText = blank;
-            inputFat.PlaceholderText = blank;
-            inputFiber.PlaceholderText = blank;
-            inputMoisture.PlaceholderText = blank;
-            inputProtein.PlaceholderText = blank;
-            inputTaurine.PlaceholderText = blank;
+            string blank = "";
+            inputAsh.Text = blank;
+            inputFat.Text = blank;
+            inputFiber.Text = blank;
+            inputMoisture.Text = blank;
+            inputProtein.Text = blank;
+            inputTaurine.Text = blank;
             outputDryCarb.Text = "0.00";
             outputWetCarb.Text = "0.00";
             
