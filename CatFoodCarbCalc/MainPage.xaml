@@ -34,7 +34,7 @@
             <Setter Property="Foreground"
                     Value="{ThemeResource SystemAccentColor}"/>
         </Style>
-        
+
         <!--Text Box Styles-->
         <Style x:Key="styleTextBoxInput"
                TargetType="TextBox">
@@ -51,7 +51,7 @@
             <Setter Property="Background"
                     Value="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
         </Style>
-        
+
         <!--Button Styles-->
         <Style x:Key="styleButton"
                TargetType="Button">
@@ -60,9 +60,9 @@
             <Setter Property="Background"
                     Value="{ThemeResource SystemAccentColor}"/>
         </Style>
-        
+
     </Page.Resources>
-    
+
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         
         <Grid.RowDefinitions>               <!--Row Numbers-->
