@@ -92,6 +92,7 @@ namespace CatFoodCarbCalc
             double ash, protein, fat, fiber, moisture, taurine, wcarb, dcarb;
             ash = protein = fat = fiber = moisture = taurine = wcarb = dcarb = 0.00;
 
+            //For protection against non numerical input
             try
             {
                 ash = Convert.ToDouble(inputAsh.Text);
@@ -110,9 +111,13 @@ namespace CatFoodCarbCalc
             wcarb = calculateWetCarbPercent(new List<double> { ash, protein, fat, fiber, moisture, taurine});
             dcarb = calculateDryCarbPercent(moisture, wcarb);
 
+            //Clean up for presentation
+            wcarb = Math.Round(wcarb, 2);
+            dcarb = Math.Round(dcarb, 2);
+
             //Present to User
-            outputDryCarb.Text = dcarb.ToString();
-            outputWetCarb.Text = wcarb.ToString();
+            outputDryCarb.Text = dcarb.ToString() + " %";
+            outputWetCarb.Text = wcarb.ToString() + " %";
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
